@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: 'InvolveRegualar'; 
+    src: url('../fonts/involve/Involve-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'InvolveMedium'; 
+    src: url('../fonts/involve/Involve-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'InvolveSemibold'; 
+    src: url('../fonts/involve/Involve-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'InvolveBold'; 
+    src: url('../fonts/involve/Involve-Bold.ttf') format('truetype');
+}
