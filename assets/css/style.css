@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0 20px 0;
+    padding: 12px 10px 20px 10px;
 }
 .site-header-left{
     max-width: 140px;
@@ -174,9 +174,66 @@
 .slider-nav-dots__item.active{
     background-color: #fff;
 }
+.about{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-right{
+    max-width: 597px;
+}
+.about__img{
+    max-width: 950px;
+}
+.subtitle{
+    font-family: "InvolveRegualar";
+    font-size: 16px;
+    color: var(--text-black);
+    padding-bottom: 12px;
+}
+.about-title, .about-text{
+    padding-bottom: 48px;
+}
+.title-h2{
+    font-family: "InvolveRegualar";
+    font-size: 40px;
+    color: var(--text-black);
+}
+.par{
+    font-family: "InvolveRegualar";
+    font-size: 16px;
+    color: var(--text-black);
+}
+.par:not(:last-child){
+    padding-bottom: 10px;
+}
+.abour-action{
+    padding-top: 48px;
+}
+.btn{
+    font-family: "InvolveRegualar";
+    font-size: 16px;
+    color: var(--text-black);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 40px;
+    border: 1px solid var(--text-black);
+    transition: 0.5s;
+}
+
 @media screen {
     .slider-item-action__link:hover{
         color: var(--text-black);
         background-color: var(--white);
+    }
+    .btn:hover{
+        color: var(--white);
+        background-color: var(--text-black);
+    }
+}
+@media(max-width: 1900px){
+    .slider-nav{
+        bottom: 0;
+        padding-bottom: 2px;
     }
 }

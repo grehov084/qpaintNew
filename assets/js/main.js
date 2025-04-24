@@ -1,5 +1,3 @@
-console.log(1);
-
 $(document).ready(function(){
     $(".slider-wrap").owlCarousel({
         items: 1,
