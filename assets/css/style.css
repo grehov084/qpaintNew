@@ -174,7 +174,7 @@
 .slider-nav-dots__item.active{
     background-color: #fff;
 }
-.about{
+.about-wrap{
     display: flex;
     align-items: center;
     gap: 20px;
