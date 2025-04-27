@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
             navClass: ['slider-arrows__item slider-arrows-item slider-arrows-item--left', 'slider-arrows__item slider-arrows-item slider-arrows-item--right'],
             dotClass: "slider-nav-dots__item",
         });
-      });
+    });
 
-      let colorsItems, colorsItemContent, colorsItemToggle, height;
-      colorsItems = document.querySelectorAll(".colors-info-item-title");
-      colorsItems.forEach((colorsItem)=>{
+    let colorsItems, colorsItemContent, colorsItemToggle, height;
+    colorsItems = document.querySelectorAll(".colors-info-item-title");
+    colorsItems.forEach((colorsItem)=>{
         colorsItem.addEventListener("click", ()=>{
             colorsItemToggle = colorsItem.querySelector(".colors-info-item-title-toggle");
             colorsItemContent = colorsItem.parentNode.querySelector(".colors-info-item-content");
@@ -31,5 +31,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
             colorsItem.classList.toggle("show");
             colorsItem.parentNode.classList.toggle("show");
         });
-      });
+    });
 });
