@@ -3,8 +3,10 @@
 
 :root{
     --text-black: rgba(59, 59, 59, 1);
+    --text-grey: rgba(97, 97, 100, 1);
     --white: #fff;
     --pl-main: 80px;
+    --transition-duration: 0.5s;
 }
 
 .container{
@@ -12,7 +14,6 @@
     max-width: 1760px;
     margin: 0 auto;
 }
-
 .site-header-wrap{
     display: flex;
     justify-content: space-between;
@@ -62,7 +63,7 @@
     list-style-type: none;
 }
 .site-header-nav__link{
-    font-family: 'InvolveRegualar';
+    font-family: 'InvolveRegular';
     text-transform: uppercase;
     color: var(--text-black);
     font-size: 16px;
@@ -78,13 +79,13 @@
     cursor: pointer;
 }
 .site-header-region-text{
-    font-family: 'InvolveRegualar';
+    font-family: 'InvolveRegular';
     color: var(--text-black);
     font-size: 16px;
 }
 .site-header-contacts__link{
     text-decoration: none;
-    font-family: 'InvolveRegualar';
+    font-family: 'InvolveRegular';
     color: var(--text-black);
     font-size: 16px;    
 }
@@ -122,11 +123,11 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--white);
-    font-family: 'InvolveRegualar';
+    font-family: 'InvolveRegular';
     font-size: 16px;
     border: 1px solid var(--white);
     padding: 12px 56px;
-    transition: 0.5s;
+    transition: var(--transition-duration);
 }
 .slider-nav{
     position: absolute;
@@ -186,7 +187,7 @@
     max-width: 950px;
 }
 .subtitle{
-    font-family: "InvolveRegualar";
+    font-family: "InvolveRegular";
     font-size: 16px;
     color: var(--text-black);
     padding-bottom: 12px;
@@ -195,12 +196,13 @@
     padding-bottom: 48px;
 }
 .title-h2{
-    font-family: "InvolveRegualar";
+    font-family: "InvolveRegular";
     font-size: 40px;
+    font-weight: 500;
     color: var(--text-black);
 }
 .par{
-    font-family: "InvolveRegualar";
+    font-family: "InvolveRegular";
     font-size: 16px;
     color: var(--text-black);
 }
@@ -211,16 +213,206 @@
     padding-top: 48px;
 }
 .btn{
-    font-family: "InvolveRegualar";
+    font-family: "InvolveRegular";
     font-size: 16px;
     color: var(--text-black);
     text-transform: uppercase;
     text-decoration: none;
     padding: 17px 40px;
     border: 1px solid var(--text-black);
-    transition: 0.5s;
+    transition: var(--transition-duration);
 }
-
+.colors{
+    background-color: rgba(246, 246, 244, 1);
+}
+.colors-wrap{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.colors-title{
+    padding-bottom: 40px;
+}
+.colors-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.item-title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.item-title-h3{
+    font-family: "InvolveRegular";
+    font-size: 28px;
+    color: var(--text-black);
+}
+.colors-info-item__text{
+    font-family: "InvolveRegular";
+    font-size: 16px;
+    color: var(--text-grey);
+    padding-bottom: 32px;
+}
+.colors-info-item{
+    padding: 28px 24px;
+    transition: var(--transition-duration);
+}
+.colors-info-item.show{
+    padding: 75px 24px;
+}
+.colors-info-item:not(:nth-child(2)){
+    border-top: 1px solid rgba(185, 185, 185, 1);
+    border-bottom: 1px solid rgba(185, 185, 185, 1);
+}
+.colors-info-right{
+    max-width: 597px;
+}
+.colors-info-item-link{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+}
+.colors-info-item-link__text{
+    color: var(--text-black);
+    font-size: 16px;
+    font-family: "InvolveBold";
+}
+.colors-info-item-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition-duration);
+}
+.colors-info-item-title-text{
+    cursor: pointer;
+}
+.colors-info-item-title-toggle{
+    transition: var(--transition-duration);
+    position: relative;
+}
+.colors-info-item-title-toggle.show{
+    transform: rotateX(180deg);
+    top: 5px;
+}
+.colors-info-item-title{
+    transition: var(--transition-duration);
+}
+.colors-info-item-title.show{
+    padding-bottom: 28px;
+}
+.palette{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.palette-item{
+    width: 100%;
+    max-width: 951px;
+    max-height: 400px;
+}
+.palette-item--brown{
+    background-color: rgba(212, 173, 132, 1);
+}
+.palette-item--grey{
+    background-color: rgba(79, 77, 80, 1);
+}
+.palette-item--flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    max-width: 197px;
+    width: 100%;
+    color: var(--white);
+}
+.line--margin{
+    margin: 0;
+}
+.palette-item-wrap{
+    padding: 124px 80px;
+    max-height: inherit;
+    height: inherit;
+}
+.palette-item-wrap--no-padding{
+    padding: 0 !important;
+}
+.palette-item-wrap---padding{
+    padding: 175px 366px;
+}
+.palette-item-wrap--flex{
+    display: flex;
+    gap: 2px;
+}
+.palette-item-title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+.palette-item-title--align{
+    align-items: start;
+}
+.palette-item-title--padding{
+    padding-bottom: 45px;
+}
+.palette-item-left{
+    width: 100%;
+    max-width: 659px;
+    max-height: inherit;
+    background-image: url("../images/palette.jpg");
+    background-size: 154%;
+    background-position: -25px;
+}
+.palette-item__img{
+    max-height: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+.title-h3{
+    font-family: "InvolveRegular";
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 500;
+}
+.palette-item-subtitle{
+    text-transform: uppercase;
+}
+.palette-item-link{
+    text-decoration: none;
+    max-height: inherit;
+    height: 400px;
+    display: block;
+}
+.palette-item-right{
+    background-color: rgba(198, 188, 178, 1);
+}
+.palette-item-right-wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
+.palette-item__text{
+    font-family: "InvolveRegular";
+    font-size: 16px;
+    color: var(--white);
+    padding-top: 16px;
+}
+.palette-item-bottom{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.palette-item-link-text{
+    color: var(--white);
+    font-size: 16px;
+    font-family: "InvolveMedium";
+}
 @media screen {
     .slider-item-action__link:hover{
         color: var(--text-black);
