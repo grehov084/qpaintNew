@@ -1,5 +1,7 @@
 @import url(reset.css);
 @import url(fonts.css);
+@import url(owl.carousel.css);
+@import url(owl.carousel.min.css);
 
 :root{
     --text-black: rgba(59, 59, 59, 1);
@@ -193,6 +195,9 @@
     color: var(--text-black);
     padding-bottom: 12px;
 }
+.subtitle--color{
+    color: var(--white);
+}
 .about-title, .about-text{
     padding-bottom: 48px;
 }
@@ -201,6 +206,9 @@
     font-size: 40px;
     font-weight: 500;
     color: var(--text-black);
+}
+.title-h2--color{
+    color: var(--white);
 }
 .par{
     font-family: "InvolveRegular";
@@ -222,6 +230,10 @@
     padding: 17px 40px;
     border: 1px solid var(--text-black);
     transition: var(--transition-duration);
+}
+.btn--white{
+    color: var(--white);
+    border-color: var(--white);
 }
 .colors{
     background-color: rgba(246, 246, 244, 1);
@@ -418,6 +430,9 @@
     text-align: center;
     text-transform: uppercase;
 }
+.about-paint{
+    height: 943px;
+}
 .about-paint-wrap{
     padding-top: 120px;
 }
@@ -497,6 +512,46 @@
     padding-top: 10px;
 }
 /*============================*/
+.cooperation{
+    background-image: url("../images/cooperation.jpg");
+    background-color: rgba(164, 138, 103, 0.4);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.cooperation-wrap{
+    width: 100%;
+    padding: 146px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cooperation-par{
+    color: var(--white);
+}
+.cooperation-subtitle{
+    text-align: center;
+}
+.cooperation-title{
+    max-width: 598px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.cooperation-par{
+    max-width: 550px;
+    text-align: center;
+    padding-bottom: 40px !important;
+}
+.cooperation-action{
+    display: flex;
+    gap: 10px;
+}
+.callback{
+    display: flex;
+    justify-content: center;
+}
+.callback-wrap{
+    padding: 100px 0;
+}
 @media screen {
     .slider-item-action__link:hover{
         color: var(--text-black);
@@ -505,6 +560,10 @@
     .btn:hover{
         color: var(--white);
         background-color: var(--text-black);
+    }
+    .btn--white:hover{
+        color: var(--text-black);
+        background-color: var(--white);
     }
 }
 @media(max-width: 1900px){
