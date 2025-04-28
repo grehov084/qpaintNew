@@ -9,6 +9,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
             dotClass: "slider-nav-dots__item",
             itemClass: "slider-item",
         });
+        $(".paint-slider-wrap").owlCarousel({
+            items: 1,
+            autoplay: true,
+            loop: true,
+            dotsContainer: ".paint-slider-dots",
+            dotClass: "paint-slider-dots__item",
+            itemClass: "paint-slider-item",
+        });
     });
 
     let colorsItems, colorsItemContent, colorsItemToggle, height;
