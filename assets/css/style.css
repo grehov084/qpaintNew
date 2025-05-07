@@ -96,9 +96,14 @@ body{
     font-size: 16px;    
 }
 /*===SLIDER===*/
+.owl-stage{
+    display: flex;
+}
 .slider{
     max-height: 750px;
     overflow: hidden;
+    display: flex;
+    align-items: end;
 }
 .slider-wrap{
     max-height: inherit;
@@ -106,10 +111,13 @@ body{
     flex-direction: column;
     justify-content: end;
 }
-.slider-item{
+.slider-item-wrap{
     max-height: 750px;
     display: flex;
     align-items: center;
+}
+.slider-item-bg, .slider-item-bg__img{
+    width: 100%;
 }
 .slider-item-content{
     position: absolute;
@@ -135,15 +143,12 @@ body{
     padding: 12px 56px;
     transition: var(--transition-duration);
 }
-.slider-nav{
-    position: absolute;
-}
 .slider-bg-filter{
     width: 100%;
     height: 100%;
     max-height: inherit;
     position: absolute;
-    background: rgba(53, 53, 53, 0.4);
+    background: rgba(53, 53, 53, 0.2);
 }
 .slider-nav{
     padding-left: var(--pl-main);
@@ -152,7 +157,6 @@ body{
     gap: 24px;
     align-items: center;
     position: absolute;
-    bottom: 87px;
 }
 .slider-arrows{
     display: flex;
@@ -177,11 +181,15 @@ body{
     border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+    background: transparent;
 }
 .slider-nav-dots__item.active{
     background-color: #fff;
 }
 /*=================================*/
+.site-main-about{
+    display: flex;
+}
 .about-wrap{
     display: flex;
     align-items: center;
@@ -322,12 +330,15 @@ body{
 }
 .palette{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     gap: 2px;
+}
+.palette-top, .palette-bottom{
+    display: flex;
 }
 .palette-item{
     width: 100%;
-    max-width: 951px;
     max-height: 400px;
 }
 .palette-item--brown{
@@ -378,7 +389,6 @@ body{
 }
 .palette-item-left{
     width: 100%;
-    max-width: 659px;
     max-height: inherit;
     background-image: url("../images/palette.jpg");
     background-size: 154%;
@@ -684,6 +694,19 @@ body{
     .btn--white:hover{
         color: var(--text-black);
         background-color: var(--white);
+    }
+}
+@media(min-width: 1930px){
+    .about{
+        justify-content: center;
+    }
+}
+@media(max-width: 1930px){
+    .palette-item{
+        max-width: 951px;
+    }
+    .palette-item-left{
+        max-width: 659px;
     }
 }
 @media(max-width: 1900px){
