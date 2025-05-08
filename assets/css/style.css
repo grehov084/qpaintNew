@@ -826,7 +826,10 @@ body{
         max-width: 392px;
     }
     .callback-personal{
-        padding-top: 15px;
+        padding: 15px 10px 0 10px; 
+    }
+    .callback-text{
+        padding: 0 10px 48px 10px;
     }
 }
 @media (max-width: 425px) {
