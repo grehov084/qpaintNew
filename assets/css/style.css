@@ -10,6 +10,7 @@
     --gret: rgba(185, 185, 185, 1);
     --pl-main: 80px;
     --transition-duration: 0.5s;
+    --safety-padding: 0 10px;
 }
 body{
     font-family: "InvolveRegular";
@@ -790,6 +791,11 @@ body{
         width: 230px;
     }
 }
+@media(max-width: 790px){
+    .site-header-right{
+        display: none;
+    }
+}
 @media(max-width: 768px){
     .slider, .slider-item-wrap {
         max-height: 435px;
@@ -802,6 +808,9 @@ body{
     }
     .site-header-region-toggle{
         display: flex;
+    }
+    .about-title, .about-text{
+        padding: var(--safety-padding) 48px 10px;
     }
 }
 @media(max-width: 730px){
@@ -818,5 +827,10 @@ body{
     }
     .callback-personal{
         padding-top: 15px;
+    }
+}
+@media (max-width: 425px) {
+    .paint-slider-wrap{
+        padding: var(--safety-padding);
     }
 }
